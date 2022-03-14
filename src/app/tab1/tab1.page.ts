@@ -21,7 +21,7 @@ export class Tab1Page {
       total: '$70',
       name: 'Thomas Wilson',
       city: 'São Paulo/SP',
-      imgUrl: 'https://randomuser.me/api/portraits/lego/4.jpg',
+      imgUrl: 'https://randomuser.me/api/portraits/men/4.jpg',
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export class Tab1Page {
       total: '$70',
       name: 'Thomas Wilson',
       city: 'São Paulo/SP',
-      imgUrl: 'https://randomuser.me/api/portraits/lego/1.jpg',
+      imgUrl: 'https://randomuser.me/api/portraits/men/1.jpg',
     },
   ];
 }

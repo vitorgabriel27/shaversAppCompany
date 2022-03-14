@@ -1,63 +1,63 @@
 <ion-header color="light">
-  <ion-toolbar color="light">
-    <div class="container">
-      <img src="/assets/shavers-logo.svg" width="20%" style="margin: 2.5%" />
+<ion-toolbar color="light">
+  <div class="container">
+    <img src="/assets/shavers-logo.svg" width="20%" style="margin: 2.5%" />
 
-      <ion-title slot="end" class="ion-text-center">Produtos</ion-title>
-    </div>
-    <strong></strong>
-  </ion-toolbar>
+    <ion-title slot="end" class="ion-text-center">Produtos</ion-title>
+  </div>
+  <strong></strong>
+</ion-toolbar>
 </ion-header>
 
 <ion-content color="secondary">
-  <ion-header>
-    <ion-toolbar color="secondary">
-      <ion-title size="small" color="dark">Hoje</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-header>
   <ion-toolbar color="secondary">
-    <ion-card *ngFor="let value of schedules">
-      <ion-card-header>
-        <div class="container">
-          <ion-card-title style="font-size: 15px">
-            <strong>{{value.title}}</strong>
-          </ion-card-title>
-          <button color="light" style="background-color: #fff">
-            <ion-icon src="/assets/side.svg"></ion-icon>
-          </button>
-        </div>
-        <div class="container">
-          <ion-card-subtitle>Status: {{value.status}}</ion-card-subtitle>
-          <ion-card-subtitle
-            >Ás <strong>{{value.time}}</strong> do dia
-            <strong>{{value.date}}</strong></ion-card-subtitle
-          >
-        </div>
-      </ion-card-header>
-      <ion-card-content>
-        <div class="container">
-          <ion-toolbar class="profile">
-            <ion-avatar slot="start">
-              <img src="{{value.imgUrl}}" />
-            </ion-avatar>
-            <ion-label>
-              <h4>{{value.name}}</h4>
-              <p>{{value.city}}</p>
-            </ion-label>
-          </ion-toolbar>
-
-          <button class="btn btn-style">Ver Perfil</button>
-        </div>
-        <div class="container">
-          <ion-text>Trajeto: {{value.total}}</ion-text>
-          <ion-text>Serviço: {{value.total}}</ion-text>
-          <ion-text><strong>Total: {{value.total}}</strong></ion-text>
-        </div>
-        <div class="container">
-          <button class="btn btn-decline">Recusar</button>
-          <button class="btn btn-accept">Aceitar</button>
-        </div>
-      </ion-card-content>
-    </ion-card>
+    <ion-title size="small" color="dark">Hoje</ion-title>
   </ion-toolbar>
+</ion-header>
+<ion-toolbar color="secondary">
+  <ion-card *ngFor="let value of schedules">
+    <ion-card-header>
+      <div class="container">
+        <ion-card-title style="font-size: 15px">
+          <strong>{{value.title}}</strong>
+        </ion-card-title>
+        <button color="light" style="background-color: #fff">
+          <ion-icon src="/assets/side.svg"></ion-icon>
+        </button>
+      </div>
+      <div class="container">
+        <ion-card-subtitle>Status: {{value.status}}</ion-card-subtitle>
+        <ion-card-subtitle
+          >Ás <strong>{{value.time}}</strong> do dia
+          <strong>{{value.date}}</strong></ion-card-subtitle
+        >
+      </div>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="container">
+        <ion-toolbar >
+          <ion-avatar class="profile" slot="start">
+            <img src="{{value.imgUrl}}" />
+          </ion-avatar>
+          <ion-label>
+            <h4>{{value.name}}</h4>
+            <p>{{value.city}}</p>
+          </ion-label>
+        </ion-toolbar>
+
+        <button class="btn btn-style">Ver Perfil</button>
+      </div>
+      <div class="container">
+        <ion-text>Trajeto: {{value.total}}</ion-text>
+        <ion-text>Serviço: {{value.total}}</ion-text>
+        <ion-text><strong>Total: {{value.total}}</strong></ion-text>
+      </div>
+      <div class="container">
+        <button class="btn btn-decline">Recusar</button>
+        <button class="btn btn-accept">Aceitar</button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-toolbar>
 </ion-content>

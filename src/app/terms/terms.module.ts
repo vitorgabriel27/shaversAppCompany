@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TermsComponent } from './terms.component';
+import { PolicesComponent } from '../polices/polices.component';
 
 @NgModule({
   imports: [
@@ -11,6 +12,6 @@ import { TermsComponent } from './terms.component';
     RouterModule,
 
   ],
-  declarations: [TermsComponent]
+  declarations: [TermsComponent, PolicesComponent]
 })
 export class TermsComponentModule {}

@@ -7,8 +7,9 @@ import { PixComponent } from '../pix/pix.component';
 import { AdressComponent } from '../adress/adress.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ServicesComponent } from '../services/services.component';
-import { NewServiceComponent } from '../new-service/new-service.component';
 import { EditInfoComponent } from '../edit-info/edit-info.component';
+import { PolicesComponent } from '../polices/polices.component';
+import { NewServicesComponent } from '../new-services/new-services.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
     component: TermsComponent,
   },
   {
+    path: 'terms/polices',
+    component: PolicesComponent,
+  },
+  {
     path: 'pix',
     component: PixComponent,
   },
@@ -44,9 +49,10 @@ const routes: Routes = [
     component: ServicesComponent,
   },
   {
-    path: 'services/new-service',
-    component: NewServiceComponent,
+    path: 'services/new-services',
+    component: NewServicesComponent,
   },
+  
 ];
 
 @NgModule({

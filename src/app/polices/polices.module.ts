@@ -2,8 +2,7 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ServicesComponent } from './services.component';
-import { NewServicesComponent } from '../new-services/new-services.component';
+import { PolicesComponent } from './polices.component';
 
 @NgModule({
   imports: [
@@ -12,6 +11,6 @@ import { NewServicesComponent } from '../new-services/new-services.component';
     RouterModule,
 
   ],
-  declarations: [ServicesComponent, NewServicesComponent]
+  declarations: [PolicesComponent]
 })
-export class ServicesComponentModule {}
+export class PolicesComponentModule {}

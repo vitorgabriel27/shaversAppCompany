@@ -16,7 +16,7 @@
       class="list-style"
     >
       <ion-list class="list-style">
-        <ion-item *ngFor="let val of services">
+        <ion-item *ngFor=" let val of services">
           <ion-avatar slot="start">
             <img src="./avatar-finn.png" />
           </ion-avatar>
@@ -34,9 +34,9 @@
             type="submit"
             class="btn btn-primary btn-shadow btn-style"
             style="background-color: var(--ion-color-primary);"
-            [routerLink] ="['new-service']"
+            [routerLink] ="['new-services']"
           >
-            <a [routerLink] ="['new-service']" class="btn-style" style="color: white">Adicionar Outro Serviço</a>
+            <a  class="btn-style" style="color: white">Adicionar Outro Serviço</a>
           </button>
         </div>
         <ion-text color="medium">Recomendamos adicionar todos os serviços que você possa realizar</ion-text>
@@ -45,5 +45,21 @@
       </ion-toolbar>
         
     </div>
+  </ion-toolbar>
+  <ion-toolbar color="secondary">
+  <div class="container">
+    <div>
+      <button
+        type="submit"
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        [routerLink] ="['.']"
+      >
+        <a  class="btn-style" style="color: white">Atualizar Serviços</a>
+      </button>
+    </div>
+    
+  </div>
+  
   </ion-toolbar>
 </ion-content>

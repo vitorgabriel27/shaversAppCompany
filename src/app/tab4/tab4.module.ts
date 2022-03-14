@@ -12,7 +12,8 @@ import { AdressComponent } from '../adress/adress.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ServicesComponent } from '../services/services.component';
 import { EditInfoComponent } from '../edit-info/edit-info.component';
-import { NewServiceComponent } from '../new-service/new-service.component';
+import { PolicesComponent } from '../polices/polices.component';
+import { NewServicesComponent } from '../new-services/new-services.component';
 
 import { Tab4PageRoutingModule } from './tab4-routing.module';
 
@@ -29,7 +30,8 @@ import { Tab4PageRoutingModule } from './tab4-routing.module';
   PortfolioComponent,
   ServicesComponent,
   EditInfoComponent,
-  NewServiceComponent
+  PolicesComponent,
+  NewServicesComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
