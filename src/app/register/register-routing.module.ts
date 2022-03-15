@@ -5,6 +5,7 @@ import { LoginComponent } from '../login/login.component';
 import { SignUpComponent } from '../sign-up/sign-up.component';
 import { AddInfoComponent } from './add-info/add-info.component';
 import { AddBinfoComponent } from './add-binfo/add-binfo.component';
+import { AddAvailableComponent } from './add-available/add-available.component';
 import { AddAdressComponent } from './add-adress/add-adress.component';
 import { AddProfileComponent } from './add-profile/add-profile.component';
 import { VerifyComponent } from './verify/verify.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
     children: [
       { path: 'init', component: InitComponent},
       { path: 'add-adress', component: AddAdressComponent},
+      { path: 'add-available', component: AddAvailableComponent},
       { path: 'add-info', component: AddInfoComponent},
       { path: 'add-binfo', component: AddBinfoComponent},
       { path: 'add-profile', component: AddProfileComponent},

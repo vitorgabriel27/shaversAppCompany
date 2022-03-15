@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { RegisterRoutingModule } from './register-routing.module';
 import { AddInfoComponent } from './add-info/add-info.component';
+import { AddAvailableComponent } from './add-available/add-available.component';
 import { AddBinfoComponent } from './add-binfo/add-binfo.component';
 import { AddAdressComponent } from './add-adress/add-adress.component';
 import { AddProfileComponent } from './add-profile/add-profile.component';
@@ -31,7 +32,8 @@ import { InitComponent } from './init/init.component';
     AddProfileComponent,
     VerifyComponent,
     InitComponent,
-    AddBinfoComponent 
+    AddBinfoComponent,
+    AddAvailableComponent
   ]
 })
 export class RegisterModule {}
