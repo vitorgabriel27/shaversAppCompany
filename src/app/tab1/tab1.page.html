@@ -1,11 +1,11 @@
 <ion-header color="light">
 <ion-toolbar color="light">
   <div class="container">
-    <img src="/assets/shavers-logo.svg" width="20%" style="margin: 2.5%" />
-
-    <ion-title slot="end" class="ion-text-center">Produtos</ion-title>
+  <img src="/assets/shavers-logo.svg" width="50%" style="margin: 10%" />
   </div>
-  <strong></strong>
+    <ion-title slot="end" size="small" ><strong>Pedidos</strong></ion-title>
+  
+  
 </ion-toolbar>
 </ion-header>
 
@@ -46,7 +46,7 @@
           </ion-label>
         </ion-toolbar>
 
-        <button class="btn btn-style">Ver Perfil</button>
+        <button class="btn btn-style" routerLink="/tabs/tab4/info">Ver Perfil</button>
       </div>
       <div class="container">
         <ion-text>Trajeto: {{value.total}}</ion-text>

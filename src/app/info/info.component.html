@@ -34,16 +34,16 @@
   <ion-toolbar color="secondary">
     <ion-title color="dark">Portfólio</ion-title>
     <ion-slides pager="false" [options]="slideOpts">
-      <ion-slide *ngFor = "let entry of portfolio">
+      <ion-slide *ngFor = " let entry of portfolio ">
         <div class="progress ion-text-left">
           <span>{{ entry.title }}</span>
         </div>
       </ion-slide>
     </ion-slides>
   </ion-toolbar>
-  <ion-toolbar color="secondary">
+  <ion-toolbar color="secondary" class="list-style">
     <ion-title color="dark">Serviços</ion-title>
-    <ion-list color="secondary">
+    <ion-list  color="secondary">
       <ion-item *ngFor="let val of services">
         <ion-avatar slot="start">
           <img src="./avatar-finn.png" />

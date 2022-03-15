@@ -14,7 +14,7 @@ export class SignUpComponent {
     this.router.navigate(['/tabs/tabs4/terms']);
   }
   fazerCadastro(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['/register']);
   }
  
 }
