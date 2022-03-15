@@ -35,27 +35,42 @@
           </div>
         </div>
       </div>
-      <div class="form-field">
+      <div class="container form-field">
         <ion-label color="medium">
           <ion-text>HORÁRIO DISPONÍVEL (Dias Úteis)</ion-text>
         </ion-label>
-        <input
-          type="range"
-          class="form-control shadow-none without-border"
-          placeholder="Insira o nome do serviço"
-        />
+
+        <div class="container">
+          <ion-label>
+            <ion-text color="dark">9H00</ion-text>
+            <p style="font-size: 9px;">ABRIR</p>
+          </ion-label>
+          
+           <ngx-slider [(value)]="value1" [(highValue)]="highValue1" [options]="options"></ngx-slider>
+           <ion-label>
+            <ion-text color="dark">18H00</ion-text>
+            <p style="font-size: 9px;">FECHAR</p>
+          </ion-label>
+        </div>
+       
       </div>
-      <div class="form-field">
+      <div class=" container form-field">
         <ion-label color="medium">
           <ion-text>HORÁRIO DISPONÍVEL (Fim de Semana)</ion-text>
         </ion-label>
-        <input
-          type="range"
-          class="form-control shadow-none without-border"
-          placeholder="Insira o nome do serviço"
-        />
+        <div class="container">
+        <ion-label>
+          <ion-text color="dark">10H00</ion-text>
+          <p style="font-size: 11px;">ABRIR</p>
+        </ion-label>
+           <ngx-slider [(value)]="value2" [(highValue)]="highValue2" [options]="options1"></ngx-slider>
+          <ion-label>
+           <ion-text color="dark">18H00</ion-text>
+           <p style="font-size: 9px;">FECHAR</p>
+         </ion-label>
+        </div>
       </div>
-      <div class="form-field">
+      <div class="container form-field">
         <ion-label color="medium">
           <ion-text>HORÁRIO DE ALMOÇO</ion-text>
         </ion-label>
@@ -67,7 +82,7 @@
           <option *ngFor="let v of values" value="">{{ v.item }}</option>
         </select>
       </div>
-      <div class="form-field">
+      <div class="container form-field">
         <ion-label color="medium">
           <ion-text>DISPONIBILIDADE EM FERIADOS</ion-text>
         </ion-label>

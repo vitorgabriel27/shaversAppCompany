@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Options } from "@angular-slider/ngx-slider";
 
 @Component({
   selector: 'add-available',
@@ -8,6 +9,34 @@ import { Component } from '@angular/core';
 export class AddAvailableComponent {
 
   constructor () {};
+
+  value1: number = 9;
+  highValue1: number = 18;
+  options: Options = {
+    floor: 9,
+    ceil: 18,
+    showSelectionBar: true,
+    getPointerColor: (value: number): string => {
+      return '#48CC11';
+    },
+    getSelectionBarColor: (value: number): string => {
+      return '#48CC11';
+    }
+  };
+  value2: number = 10;
+  highValue2: number = 18;
+  options1: Options = {
+    floor: 10,
+    ceil: 18,
+    showSelectionBar: true,
+    getPointerColor: (value: number): string => {
+      return '#48CC11';
+    },
+    getSelectionBarColor: (value: number): string => {
+      return '#48CC11';
+    }
+  };
+;
 
   public week = [
     {
@@ -47,5 +76,5 @@ export class AddAvailableComponent {
       item: '13h00 ás 14h00',
     },
   ];
-  
+
 }

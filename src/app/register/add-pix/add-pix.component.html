@@ -1,0 +1,58 @@
+<ion-header class="ion-text-center ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="../add-profile">
+        <ion-icon color="dark"  name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="container">
+      <ion-title size="small"><strong>Receba Pagamentos</strong></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary" class="list-style">
+    <div class="container">
+      <ion-img class="cimage" src="../assets/pix.svg"></ion-img>
+    </div>
+
+  </ion-toolbar>
+
+  <ion-toolbar color="secondary">
+    <div class="container">
+      <ion-label color="dark">
+        <h1><strong> Receba diariamente por pix </strong></h1>
+        <p>Nós fazemos todo o sistema de pagamento via PIX, coloque sua chave pix para receber pelos seus serviços</p>
+      </ion-label>
+    </div>
+    <div>
+    <div id="pix" class="container form-field">
+      <ion-label color="medium"> 
+        <ion-text>SUA CHAVE PIX</ion-text>
+      </ion-label>
+      <input
+        type="text"
+        class="form-control shadow-none without-border"
+        id="pix"
+        placeholder="Insira a sua chave pix"/>
+      
+    </div>
+  </div>
+  </ion-toolbar>
+ 
+</ion-content>
+
+<ion-footer class="ion-text-center ion-no-border">
+  <ion-toolbar color="secondary">
+    <div class="sbutton">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+       
+      >
+        <a  class="btn-style" [routerLink] = "['../verify']">Próximo</a>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-footer>
