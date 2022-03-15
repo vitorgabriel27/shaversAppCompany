@@ -2,7 +2,7 @@
   <ion-toolbar color="light">
     <ion-buttons slot="start">
       <ion-button routerLink="../add-binfo">
-        <ion-icon color="dark"  name="chevron-back-outline"></ion-icon>
+        <ion-icon color="dark" name="chevron-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
     <div class="container">
@@ -18,71 +18,68 @@
       class="container list-style"
     >
       <div class="container form-field">
-        <ion-label color="medium"> 
+        <ion-label color="medium">
           <ion-text>DIAS DISPONÍVEIS</ion-text>
         </ion-label>
-      
-      <div class="container">
-        <div *ngFor="let day of week">
-            <label  style="color: var(--ion-color-medium);"  class="checkbox-style">
-            <input type="checkbox" >
-            <span  class="checkmark"></span>
-            
-          </label>
-          <ion-text  color="medium">{{day.name}}</ion-text>
+
+        <div class="container">
+          <div *ngFor="let day of week">
+            <label
+              style="color: var(--ion-color-medium);"
+              class="checkbox-style"
+            >
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <ion-text color="medium">{{ day.name }}</ion-text>
+          </div>
         </div>
-      </div>   
       </div>
       <div class="form-field">
-      <ion-label color="medium"> 
-        <ion-text>HORÁRIO DISPONÍVEL (Dias Úteis)</ion-text>
-      </ion-label>
-      <input
-        type="range"
-        class="form-control shadow-none without-border"
-
-        placeholder="Insira o nome do serviço"/>
-      
+        <ion-label color="medium">
+          <ion-text>HORÁRIO DISPONÍVEL (Dias Úteis)</ion-text>
+        </ion-label>
+        <input
+          type="range"
+          class="form-control shadow-none without-border"
+          placeholder="Insira o nome do serviço"
+        />
       </div>
       <div class="form-field">
-      <ion-label color="medium"> 
-        <ion-text>HORÁRIO DISPONÍVEL (Fim de Semana)</ion-text>
-      </ion-label>
-      <input
-        type="range"
-        class="form-control shadow-none without-border"
-
-        placeholder="Insira o nome do serviço"/>
-      
+        <ion-label color="medium">
+          <ion-text>HORÁRIO DISPONÍVEL (Fim de Semana)</ion-text>
+        </ion-label>
+        <input
+          type="range"
+          class="form-control shadow-none without-border"
+          placeholder="Insira o nome do serviço"
+        />
       </div>
-      <div class="form-field" >
-      <ion-label color="medium" > 
-        <ion-text>HORÁRIO DE ALMOÇO</ion-text>
-      </ion-label>
-      <select
-        
-        type="range"
-        class="form-control shadow-none without-border"
-
-        placeholder="Insira o nome do serviço">
-        <option *ngFor="let v of values" value="">{{v.item}}</option>
-      </select>
-      
+      <div class="form-field">
+        <ion-label color="medium">
+          <ion-text>HORÁRIO DE ALMOÇO</ion-text>
+        </ion-label>
+        <select
+          type="range"
+          class="form-control shadow-none without-border"
+          placeholder="Insira o nome do serviço"
+        >
+          <option *ngFor="let v of values" value="">{{ v.item }}</option>
+        </select>
       </div>
-      <div class="form-field" >
-      <ion-label color="medium" > 
-        <ion-text>DISPONIBILIDADE EM FERIADOS</ion-text>
-      </ion-label>
-      <ion-toggle color="tertiary"></ion-toggle>
-      </div>
-      
-      
-      
-    </div>
+      <div class="form-field">
+        <ion-label color="medium">
+          <ion-text>DISPONIBILIDADE EM FERIADOS</ion-text>
+        </ion-label>
+        <div class="container">
+        <ion-toggle color="tertiary"></ion-toggle>
+        <ion-text color="medium">Fechado em feriados</ion-text>
+        </div>
+          
   
- 
+      </div>
+    </div>
   </ion-toolbar>
-
 </ion-content>
 
 <ion-footer class="ion-text-center ion-no-border">
@@ -91,9 +88,9 @@
       <button
         class="btn btn-primary btn-shadow btn-style"
         style="background-color: var(--ion-color-tertiary);"
-        routerLink = "add-adress"
+        routerLink="add-adress"
       >
-        <a  class="btn-style" [routerLink] = "['../add-profile']">Próximo</a>
+        <a class="btn-style" [routerLink]="['../add-profile']">Próximo</a>
       </button>
     </div>
   </ion-toolbar>
