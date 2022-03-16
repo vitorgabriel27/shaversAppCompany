@@ -1,0 +1,20 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="..">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title *ngFor="let t of terms" size="small"
+      ><strong>{{ t.title }}</strong></ion-title
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div class="container" *ngFor="let t of terms">
+      <ion-text> {{ t.term }} </ion-text>
+    </div>
+  </ion-toolbar>
+</ion-content>

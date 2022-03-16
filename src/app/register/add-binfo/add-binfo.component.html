@@ -1,0 +1,62 @@
+<ion-header class="ion-text-center ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="../add-info">
+        <ion-icon color="dark"  name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="container">
+      <ion-title size="small"><strong>Informações do Perfil</strong></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div
+      style="background-color: var(--ion-color-secondary)"
+      class="container list-style"
+    >
+
+    <div>
+      <div id="pix" class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>NOME COMPLETO</ion-text>
+        </ion-label>
+        <input
+          type="text"
+          class="form-control shadow-none without-border"
+          id="description"
+          placeholder="Insira seu nome completo"/>
+        
+      </div>
+      <div id="pix" class="form-field">
+      <ion-label color="medium"> 
+        <ion-text>DESCRIÇÃO</ion-text>
+      </ion-label>
+      <textarea
+        type="text"
+        class="form-control shadow-none without-border"
+        id="description"
+        placeholder="Insira sua descrição"></textarea>
+      
+    </div>
+    </div>
+    </div>
+  </ion-toolbar>
+
+</ion-content>
+
+<ion-footer class="ion-text-center ion-no-border">
+  <ion-toolbar color="secondary">
+    <div class="sbutton">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        routerLink = "add-adress"
+      >
+        <a  class="btn-style" [routerLink] = "['../add-available']">Próximo</a>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

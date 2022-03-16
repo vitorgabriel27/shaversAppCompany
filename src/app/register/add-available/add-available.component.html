@@ -1,0 +1,112 @@
+<ion-header class="ion-text-center ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="../add-binfo">
+        <ion-icon color="dark" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="container">
+      <ion-title size="small"><strong>Disponibilidade</strong></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div
+      style="background-color: var(--ion-color-secondary)"
+      class="container list-style"
+    >
+      <div class="container form-field">
+        <ion-label color="medium">
+          <ion-text>DIAS DISPONÍVEIS</ion-text>
+        </ion-label>
+
+        <div class="container">
+          <div *ngFor="let day of week">
+            <label
+              style="color: var(--ion-color-medium);"
+              class="checkbox-style"
+            >
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <ion-text color="medium">{{ day.name }}</ion-text>
+          </div>
+        </div>
+      </div>
+      <div class="container form-field">
+        <ion-label color="medium">
+          <ion-text>HORÁRIO DISPONÍVEL (Dias Úteis)</ion-text>
+        </ion-label>
+
+        <div class="container">
+          <ion-label>
+            <ion-text color="dark">9H00</ion-text>
+            <p style="font-size: 9px;">ABRIR</p>
+          </ion-label>
+          
+           <ngx-slider [(value)]="value1" [(highValue)]="highValue1" [options]="options"></ngx-slider>
+           <ion-label>
+            <ion-text color="dark">18H00</ion-text>
+            <p style="font-size: 9px;">FECHAR</p>
+          </ion-label>
+        </div>
+       
+      </div>
+      <div class=" container form-field">
+        <ion-label color="medium">
+          <ion-text>HORÁRIO DISPONÍVEL (Fim de Semana)</ion-text>
+        </ion-label>
+        <div class="container">
+        <ion-label>
+          <ion-text color="dark">10H00</ion-text>
+          <p style="font-size: 11px;">ABRIR</p>
+        </ion-label>
+           <ngx-slider [(value)]="value2" [(highValue)]="highValue2" [options]="options1"></ngx-slider>
+          <ion-label>
+           <ion-text color="dark">18H00</ion-text>
+           <p style="font-size: 9px;">FECHAR</p>
+         </ion-label>
+        </div>
+      </div>
+      <div class="container form-field">
+        <ion-label color="medium">
+          <ion-text>HORÁRIO DE ALMOÇO</ion-text>
+        </ion-label>
+        <select
+          type="range"
+          class="form-control shadow-none without-border"
+          placeholder="Insira o nome do serviço"
+        >
+          <option *ngFor="let v of values" value="">{{ v.item }}</option>
+        </select>
+      </div>
+      <div class="container form-field">
+        <ion-label color="medium">
+          <ion-text>DISPONIBILIDADE EM FERIADOS</ion-text>
+        </ion-label>
+        <div class="container">
+        <ion-toggle color="tertiary"></ion-toggle>
+        <ion-text color="medium">Fechado em feriados</ion-text>
+        </div>
+          
+  
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-content>
+
+<ion-footer class="ion-text-center ion-no-border">
+  <ion-toolbar color="secondary">
+    <div class="sbutton">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        routerLink="add-adress"
+      >
+        <a class="btn-style" [routerLink]="['../add-profile']">Próximo</a>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-footer>
